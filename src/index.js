@@ -5,7 +5,7 @@ import {BrowserRouter} from 'react-router-dom';
 import App from "./wrappers/App";
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter /*basename="/stuartrosk"*/>
         <App />
     </BrowserRouter>,
     document.getElementById("root")
