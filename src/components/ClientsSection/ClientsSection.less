@@ -1,0 +1,47 @@
+@import "../../theme_colors.less";
+
+.ClientsSection {
+    .items {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+
+        .left, .right {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .left {
+            padding-right: 4px;
+        }
+
+        .right {
+            padding-left: 4px;
+        }
+
+        .item {
+            padding: 8px 12px;
+
+            &:nth-child(odd) {
+                background-color: @secondary-background;
+            }
+        }
+    }
+
+    .feedback-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid @light-border;
+        margin-bottom: 12px;
+        outline: none;
+    }
+}

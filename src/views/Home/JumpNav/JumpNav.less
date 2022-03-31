@@ -1,0 +1,146 @@
+@import "../../../theme_colors.less";
+
+.JumpNav {
+    margin: 20px auto 0 auto;
+    max-width: 420px;
+    text-align: left;
+    transition: left 250ms, top 250ms;
+
+    .jump-item {
+        color: @light-text;
+        padding: 8px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        margin: 16px 0 8px 0;
+        width: 190px;
+        text-align: center;
+        box-shadow: @shadow;
+        user-select: none;
+        line-height: 1;
+
+        &.intro {
+            background-color: @accent4;
+        }
+        &.work {
+            background-color: @accent5;
+        }
+        &.education {
+            background-color: @accent6;
+            float: right;
+        }
+        &.awards {
+            background-color: @accent2;
+        }
+        &.projects {
+            background-color: @accent4;
+            float: right;
+        }
+        &.skills {
+            background-color: @accent3;
+        }
+        &.clients {
+            background-color: @accent7;
+            float: right;
+        }
+        &.about {
+            background-color: @accent1;
+            width: 100%;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+
+        .material-icons {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &.collapsed {
+        position: fixed;
+        left: 0;
+        top: 80px;
+        z-index: 1;
+        margin: 0;
+
+        .jump-item {
+            border-bottom: 1px solid @dark-border;
+            border-right: 1px solid @dark-border;
+            display: block;
+            float: none;
+            margin: 0;
+            width: 40px;
+            max-width: 40px;
+            box-shadow: none;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+
+            &:first-child {
+                border-top: 1px solid @dark-border;
+            }
+
+            .material-icons {
+                margin: 8px;
+            }
+
+            &:not(.active):not(:hover) {
+                background-color: @secondary-background;
+                color: @dark-border;
+            }
+
+            &:hover {
+                width: auto;
+                max-width: 160px;
+                transition: max-width 350ms;
+                border-top: 1px solid @dark-border;
+                height: 42px;
+                overflow: hidden;
+                text-align: left;
+
+                span {
+                    display: inline-block;
+                    line-height: 24px;
+                    margin-right: 8px;
+                }
+
+                &:not(:first-child) {
+                    margin-top: -1px;
+
+                    .material-icons {
+                        //margin-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.JumpNav.xs, .JumpNav.sm {
+    margin-top: 12px;
+
+    .jump-item {
+        width: calc(50% - 4px);
+        margin-top: 6px;
+
+        &.about {
+            width: 100%;
+        }
+    }
+
+    &.collapsed {
+        .jump-item {
+            width: 40px;
+            margin-top: 0;
+        }
+    }
+}

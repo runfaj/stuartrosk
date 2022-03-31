@@ -1,0 +1,101 @@
+@import "../../theme_colors.less";
+
+.Home {
+    .resume-link {
+        position: absolute;
+        bottom: 8px;
+        right: 14px;
+        font-weight: bold;
+        color: @primary-text;
+        text-decoration: none;
+
+        .material-icons {
+            vertical-align: text-bottom;
+            margin-left: 6px;
+        }
+    }
+
+    .section {
+        width: 100%;
+        padding: 56px 40px 80px 40px;
+        position: relative;
+
+        &:last-child {
+            padding-bottom: 180px;
+        }
+
+        &.intro {
+            padding: 0;
+            text-align: center;
+
+            .section-inner {
+                padding: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: @secondary-background;
+            }
+
+            .scroll-down {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 32px;
+                font-size: 32px;
+            }
+        }
+        &.work {
+            background-color: @accent5;
+        }
+        &.education {
+            background-color: @accent6;
+        }
+        &.awards {
+            background-color: @accent2;
+        }
+        &.projects {
+            background-color: @accent4;
+        }
+        &.skills {
+            background-color: @accent3;
+        }
+        &.clients {
+            background-color: @accent7;
+        }
+        &.about {
+            background-color: @accent1;
+        }
+    }
+
+    .section-title {
+        color: @light-text;
+        width: 100%;
+        max-width: 880px;
+        margin: auto;
+        padding-left: 16px;
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    .section-inner {
+        width: 100%;
+        max-width: 880px;
+        margin: auto;
+        margin-top: -6px;
+        padding: 40px;
+        min-height: 400px;
+        background-color: @primary-background;
+    }
+}
+
+.Home.xs, .Home.sm {
+    .section {
+        padding: 26px 14px 40px 40px;
+    }
+
+    .section-inner {
+        padding: 18px;
+    }
+}

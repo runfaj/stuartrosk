@@ -1,0 +1,72 @@
+@import "../../theme_colors.less";
+
+.BusinessCard {
+    display: inline-block;
+    background-color: @primary-background;
+    box-shadow: @shadow;
+    max-width: 420px;
+    width: 100%;
+    height: 220px;
+    padding: 14px 20px;
+    text-align: left;
+
+    .left-side {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(50% - 14px);
+
+        h1 {
+            font-size: 36px;
+            line-height: 1.1;
+        }
+    }
+
+    .right-side {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(50% + 14px);
+        height: 100%;
+        border-left: 30px solid @accent8;
+        padding-left: 16px;
+    }
+
+    .top-section {
+        margin-top: 2px;
+    }
+
+    .bottom-section {
+        position: absolute;
+        bottom: 2px;
+    }
+
+    .line-item {
+        position: relative;
+
+        svg, .material-icons {
+            position: absolute;
+            right: calc(100% + 19px);
+            top: 50%;
+            transform: translateY(-50%);
+            color: @light-text;
+
+            path {
+                fill: @light-text;
+            }
+
+            &.padded {
+                padding: 3px;
+            }
+        }
+
+        a {
+            color: @primary-text;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+.BusinessCard.xs, .BusinessCard.sm {
+    height: 190px;
+}

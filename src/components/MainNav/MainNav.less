@@ -1,0 +1,58 @@
+@import "../../theme_colors.less";
+
+.MainNav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: @primary-background;
+    z-index: 1;
+    height: 60px;
+    box-shadow: @bottom-shadow;
+
+    h1 {
+        font-size: 36px;
+        line-height: 60px;
+        padding-left: 12px;
+    }
+
+    .right-side {
+        position: relative;
+        float: right;
+        height: 100%;
+        border-left: 30px solid @accent8;
+        padding-left: 16px;
+        padding-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .line-item {
+        position: relative;
+
+        svg, .material-icons {
+            position: absolute;
+            right: calc(100% + 19px);
+            top: 50%;
+            transform: translateY(-50%);
+            color: @light-text;
+
+            path {
+                fill: @light-text;
+            }
+        }
+
+        a {
+            color: @primary-text;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+.MainNav.xs, .MainNav.sm {
+    h1 {
+        font-size: 24px;
+        padding-left: 8px;
+    }
+}
