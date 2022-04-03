@@ -22,22 +22,14 @@
     }
 
     .right-side {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        width: calc(50% + 14px);
-        height: 100%;
-        border-left: 30px solid @accent8;
-        padding-left: 16px;
-    }
-
-    .top-section {
-        margin-top: 2px;
-    }
-
-    .bottom-section {
-        position: absolute;
-        bottom: 2px;
+      position: relative;
+      width: calc(50% + 14px);
+      height: 100%;
+      border-left: 30px solid @accent8;
+      padding-left: 16px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .line-item {

@@ -17,7 +17,7 @@ class MainNav extends Component {
                 <div className="right-side">
                     <div className="line-item">
                         <i className="material-icons">email</i>
-                        <a href="mailto:me@stuartrosk.com">me@stuartrosk.com</a>
+                        <a href="mailto:me@stuartroskelley.com">me@stuartroskelley.com</a>
                     </div>
                     {/*
                     <div className="line-item">

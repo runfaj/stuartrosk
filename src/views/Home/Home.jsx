@@ -129,14 +129,15 @@ class Home extends Component {
                             />
                         }
                     </div>
-                    <i className="material-icons scroll-down">keyboard_arrow_down</i>
+                    <i className="material-icons scroll-down" onClick={this.onJump.bind(this, 1)}>keyboard_arrow_down</i>
+                    {/* //// uncomment and update this when job searching again
                     <a className="resume-link" href="https://docs.google.com/document/d/1WcIdYZZrH5RKe3bGXyy4Thw2ojbLba9ylRYiY1u4Y8c/edit?usp=sharing" target="_blank">
                         {window.appUtils.breakpoint !== 'xs' && window.appUtils.breakpoint !== 'sm'
                             ? 'Printable Résumé'
                             : 'Résumé'
                         }
                         <i className="material-icons">description</i>
-                    </a>
+                    </a> */}
                 </div>
                 <div
                     className="section work"
@@ -163,7 +164,7 @@ class Home extends Component {
                     ref={el=>this.sections[3]=el}
                     data-section="awards"
                 >
-                    <h1 className="section-title">Awards & Certifications</h1>
+                    <h1 className="section-title">Awards &amp; Certifications</h1>
                     <div className="section-inner">
                         <AwardsSection />
                     </div>
@@ -183,7 +184,7 @@ class Home extends Component {
                     ref={el=>this.sections[5]=el}
                     data-section="skills"
                 >
-                    <h1 className="section-title">Skills & Hobbies</h1>
+                    <h1 className="section-title">Skills &amp; Hobbies</h1>
                     <div className="section-inner">
                         <SkillsSection />
                     </div>
@@ -193,7 +194,7 @@ class Home extends Component {
                     ref={el=>this.sections[6]=el}
                     data-section="clients"
                 >
-                    <h1 className="section-title">Clients</h1>
+                    <h1 className="section-title">Feedback &amp; Clients</h1>
                     <div className="section-inner">
                         <ClientsSection />
                     </div>

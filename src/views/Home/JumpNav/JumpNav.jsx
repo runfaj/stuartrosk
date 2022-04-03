@@ -60,7 +60,7 @@ class JumpNav extends Component {
                     onClick={this.onClick.bind(this, 6)}
                 >
                     <i className="material-icons">supervisor_account</i>
-                    <span>Clients</span>
+                    <span>Feedback</span>
                 </div>
                 <div
                     className={`jump-item about ${this.props.activeSection === 7 ? 'active' : ''}`}

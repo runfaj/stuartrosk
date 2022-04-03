@@ -2,7 +2,7 @@
   "name": "stuartrosk_com",
   "version": "1.0.0",
   "description": "stuartrosk.com",
-  "author": "Stuart Roskelley <me@stuartrosk.com>",
+  "author": "Stuart Roskelley <me@stuartroskelley.com>",
   "homepage": "https://runfaj.github.io/stuartrosk",
   "main": "server.js",
   "scripts": {

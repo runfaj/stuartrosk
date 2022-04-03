@@ -226,6 +226,20 @@ class ClientsSection extends Component {
                         <hr />
 
                         <div className="feedback-item">
+                          <p><b>3/10/21 From Linda Silva, Grow.com</b>
+                          <br />Great job on taking the leadership role on the Black Ops team. It's usually the PM doing all the team leading and stuff, but [our PM] is stretched way too thin. It's cool to see you calling for team syncs and taking charge when he's not taking that role right now.
+                          <br /><br />
+                          Before you were in the leadership group, felt like someone said every other week, "We really need to run this by Stuart."" Having you in that group should have happened way sooner, but glad you're finally there and making a big impact.
+                          </p>
+                        </div>
+
+                        <div className="feedback-item">
+                          <p><b>12/31/19 From Brent Allen, Grow.com</b>
+                          <br />Big props to @stuart for this forward thinking code for our logger. We all know how tempting it is to just code to get the result...but big picture coding -- code that gets the results but also accounts scale and change -- that's the good stuff. Makes my inner nerd moochos happies :)
+                          </p>
+                        </div>
+
+                        <div className="feedback-item">
                             <p><b>6/21/13 From Jeff Snyder, Sportsman's Guide</b>
                             <br />Hi Melissa,
                             <br />I wanted to let you know that I would be happy to serve as a reference for any future prospective clients. Your product is fantastic, and I'm finding new ways to use it every day. After playing with the content modification extension, I think we may be able to save tens of thousands annually on split-testing software. But most importantly, the support has been phenomenal. Stuart and Darren are fantastic and this would have never gotten off the ground without them.

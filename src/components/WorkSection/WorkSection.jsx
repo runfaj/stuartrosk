@@ -3,7 +3,7 @@ import "./WorkSection.less";
 
 const info = [
     {
-        'company': 'Grow.com',
+        'company': 'Grow.com (by Epicor)',
         'position': 'Senior Software Engineer',
         'date': 'Nov 2018 &ndash; Present',
         'short_desc': '',
