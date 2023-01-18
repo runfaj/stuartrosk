@@ -26,6 +26,9 @@ let plugins = [
                 plugins: [autoprefixer]
             }
         }
+    }),
+    new webpack.ProgressPlugin((percentage, message) => {
+        console.log(`${(percentage * 100).toFixed()}% ${message}`);
     })
 ];
 if(isDevelopment) {

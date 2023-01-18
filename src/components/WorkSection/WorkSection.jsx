@@ -4,10 +4,15 @@ import "./WorkSection.less";
 const info = [
     {
         'company': 'Grow.com (by Epicor)',
-        'position': 'Senior Software Engineer',
+        'position': 'Product Development Manager & Frontend/Data Ops Lead Architect',
         'date': 'Nov 2018 &ndash; Present',
-        'short_desc': '',
-        'additional_desc': ``
+        'short_desc': 'Have designed and implemented many large architectural projects including a full permissions system, entire feature rewrites, significant security updates, team standards and documentation, warehousing and data transforming, and much more. Have led and mentored many individuals within the team creating a more stable product that customers can appreciate.',
+        'additional_desc': `Currently wearing a few hats as:
+        <ul>
+        <li>Product Development Manager leading 2 teams for frontend and data operations</li>
+        <li>Lead architect for frontend and data operations, as well as coordinating with other architects and product to design and implement new features, refactors, scaling, etc.</li>
+        <li>Senior software engineer across the whole stack to fill in the rest of the day-to-day after the other two roles' responsibilities.</li>
+        </ul>`
     },
     {
         'company': 'Allen Communication Learning Services',
